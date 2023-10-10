@@ -1,0 +1,1038 @@
+{
+    "type": "commit",
+    "hash": "48085eeda2a60808b92f2dad622988dde458588f",
+    "parent": "e159cd148dafb23a1f6631fefdeb97324f03c8f0",
+    "parent2": null,
+    "author": {
+        "name": "Dawid Wozniak",
+        "email": "52498300+dawidwoz@users.noreply.github.com",
+        "timestamp": 1694447278,
+        "timezone": "+0000"
+    },
+    "committer": {
+        "name": "GitHub",
+        "email": "noreply@github.com",
+        "timestamp": 1694447278,
+        "timezone": "+0200"
+    },
+    "message": "[UI] Collapsible Panels (#648)",
+    "description": "* Make panels collapsible",
+    "coauthors": [],
+    "fileCount": 108,
+    "tree": {
+        "type": "tree",
+        "path": "git-truck",
+        "name": "git-truck",
+        "hash": "284d3187ef81653143d6c5723b46944730306088",
+        "children": [
+            {
+                "type": "blob",
+                "hash": "3adee3edddf30b2eca16a6d43e809bba7035e3a0",
+                "path": "git-truck/.env.example",
+                "name": ".env.example",
+                "sizeInBytes": 16,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "ffe1705b1b7b0a9e91cd7f5716273bc373cd81c9",
+                "path": "git-truck/.eslintrc.json",
+                "name": ".eslintrc.json",
+                "sizeInBytes": 446,
+                "blameAuthors": {}
+            },
+            {
+                "type": "tree",
+                "path": "git-truck/.github",
+                "name": ".github",
+                "hash": "76315dace0b7363d541ca25310e21319e9b2330e",
+                "children": [
+                    {
+                        "type": "blob",
+                        "hash": "ac1b4a0eed02e68feedfe1ded66bb0334c4a2262",
+                        "path": "git-truck/.github/FUNDING.yml",
+                        "name": "FUNDING.yml",
+                        "sizeInBytes": 753,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/.github/ISSUE_TEMPLATE",
+                        "name": "ISSUE_TEMPLATE",
+                        "hash": "d0ff4dcee2d9206cf77efff071b6849835cd6206",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "8cf40dc4ee2a3381d0c5393b6ecb120d153dd00b",
+                                "path": "git-truck/.github/ISSUE_TEMPLATE/user-issue.md",
+                                "name": "user-issue.md",
+                                "sizeInBytes": 144,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/.github/workflows",
+                        "name": "workflows",
+                        "hash": "86fea6ce26bd298f17f66c9c06d5e2d92bb03d75",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "d7baff6b875275d5a106ebde354f3af5d85d9048",
+                                "path": "git-truck/.github/workflows/bump-version-and-publish.yml",
+                                "name": "bump-version-and-publish.yml",
+                                "sizeInBytes": 1392,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "b2b16b47f8ba479b680ae6454dbab3b68557d501",
+                                "path": "git-truck/.github/workflows/demo-gif.yml",
+                                "name": "demo-gif.yml",
+                                "sizeInBytes": 753,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "dd5a5c4aa8a9ad90fd85bef0fab3106537316adf",
+                                "path": "git-truck/.github/workflows/playwright.yml",
+                                "name": "playwright.yml",
+                                "sizeInBytes": 714,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "117157f3f2a666dd0d1e58e5db02fdecd64fa30d",
+                                "path": "git-truck/.github/workflows/publish-docker-image.yml",
+                                "name": "publish-docker-image.yml",
+                                "sizeInBytes": 904,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "1eb367440ed8e7f730b826147b49bbd9ebd9714a",
+                                "path": "git-truck/.github/workflows/test-and-build.yml",
+                                "name": "test-and-build.yml",
+                                "sizeInBytes": 1003,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "blob",
+                "hash": "51deec9d08d3f9b8b0a9fcdba7632e1a909b8b3c",
+                "path": "git-truck/.gitignore",
+                "name": ".gitignore",
+                "sizeInBytes": 203,
+                "blameAuthors": {}
+            },
+            {
+                "type": "tree",
+                "path": "git-truck/.husky",
+                "name": ".husky",
+                "hash": "5a0a2afd7ac787cf3158fb59ad53537783396c9d",
+                "children": [
+                    {
+                        "type": "blob",
+                        "hash": "31354ec1389994b5f6708c7d915fdcc6bb76ba6e",
+                        "path": "git-truck/.husky/.gitignore",
+                        "name": ".gitignore",
+                        "sizeInBytes": 2,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "36af219892fda8ea669cd4b6725cd7b892231967",
+                        "path": "git-truck/.husky/pre-commit",
+                        "name": "pre-commit",
+                        "sizeInBytes": 58,
+                        "blameAuthors": {}
+                    }
+                ]
+            },
+            {
+                "type": "tree",
+                "path": "git-truck/.vscode",
+                "name": ".vscode",
+                "hash": "748f791ab4c9d63714cbc2f9367e4e6b01480774",
+                "children": [
+                    {
+                        "type": "blob",
+                        "hash": "17883dd865e26f544b16dd7825c4e29b55e98aa3",
+                        "path": "git-truck/.vscode/extensions.json",
+                        "name": "extensions.json",
+                        "sizeInBytes": 149,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "7b579a32726255a4d6623a88b61f0ba3507e5b46",
+                        "path": "git-truck/.vscode/launch.json",
+                        "name": "launch.json",
+                        "sizeInBytes": 666,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "36f1fb126e7e37dc57125aba2ee9a25d322a34a5",
+                        "path": "git-truck/.vscode/settings.json",
+                        "name": "settings.json",
+                        "sizeInBytes": 380,
+                        "blameAuthors": {}
+                    }
+                ]
+            },
+            {
+                "type": "blob",
+                "hash": "fd1568a2abe1bf07d78126ff95013e2912ea5708",
+                "path": "git-truck/CONTRIBUTING.md",
+                "name": "CONTRIBUTING.md",
+                "sizeInBytes": 3887,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "2b3c4854c549f8f30cc14f21e106d50abd2cdb29",
+                "path": "git-truck/Dockerfile",
+                "name": "Dockerfile",
+                "sizeInBytes": 509,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "68cb076ec477d2182d42dedd9da368642387e172",
+                "path": "git-truck/INSTALL.md",
+                "name": "INSTALL.md",
+                "sizeInBytes": 1074,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "59c3706b792d401750b0b8289bfb4a255bfcc5fa",
+                "path": "git-truck/LICENSE",
+                "name": "LICENSE",
+                "sizeInBytes": 1066,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "f9d88dad52d94d801ae2fc523d8949a633fc419b",
+                "path": "git-truck/README.md",
+                "name": "README.md",
+                "sizeInBytes": 4620,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "ed003f8773622538e86de5a97a724a4234eace2d",
+                "path": "git-truck/REQUIREMENTS.md",
+                "name": "REQUIREMENTS.md",
+                "sizeInBytes": 528,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "2001408160bba2a5696376e9e1c35dc070527b0c",
+                "path": "git-truck/demo.gif",
+                "name": "demo.gif",
+                "sizeInBytes": 98870,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "a83e32df8f5dc5bdf47f7fd2124769a141f1eccf",
+                "path": "git-truck/demo.tape",
+                "name": "demo.tape",
+                "sizeInBytes": 633,
+                "blameAuthors": {}
+            },
+            {
+                "type": "tree",
+                "path": "git-truck/e2e",
+                "name": "e2e",
+                "hash": "d9ef93e14cbb54a2909f5afa3dbd99cb758bcc6f",
+                "children": [
+                    {
+                        "type": "tree",
+                        "path": "git-truck/e2e/features",
+                        "name": "features",
+                        "hash": "4de08c86f84a31700081f72cb393631db3c95416",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "6479f3ac14ce815e0b149c9a1a9f66a671f76196",
+                                "path": "git-truck/e2e/features/navigate-to-a-repository.spec.ts",
+                                "name": "navigate-to-a-repository.spec.ts",
+                                "sizeInBytes": 716,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "8ae4f1bdfa5a80de66fd7f6c9b227427283db271",
+                                "path": "git-truck/e2e/features/see-more-repositories.spec.ts",
+                                "name": "see-more-repositories.spec.ts",
+                                "sizeInBytes": 541,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "blob",
+                "hash": "cafae44b80a3b2df84785a3a09f5041406361d4f",
+                "path": "git-truck/git_truck_for_VISSOFT-1.pdf",
+                "name": "git_truck_for_VISSOFT-1.pdf",
+                "sizeInBytes": 5451505,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "ffc9eaa6d605f111f2f86a80725378ddea6a848c",
+                "path": "git-truck/package-lock.json",
+                "name": "package-lock.json",
+                "sizeInBytes": 542521,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "3f30ff8a3ab8ab2e9412dd9bb240d11ce8f80fec",
+                "path": "git-truck/package.json",
+                "name": "package.json",
+                "sizeInBytes": 3916,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "c9526def1159058e8d31a7d7a40e0ff7471c30c2",
+                "path": "git-truck/playwright.config.ts",
+                "name": "playwright.config.ts",
+                "sizeInBytes": 1615,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "f1c8dac8d2fd5682cf235f9987dfd91eff0aeb5e",
+                "path": "git-truck/postcss.config.js",
+                "name": "postcss.config.js",
+                "sizeInBytes": 81,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "38bef5ed49d7774c58dd4c6a4784d42d433fda85",
+                "path": "git-truck/project-statement.md",
+                "name": "project-statement.md",
+                "sizeInBytes": 3249,
+                "blameAuthors": {}
+            },
+            {
+                "type": "tree",
+                "path": "git-truck/public",
+                "name": "public",
+                "hash": "477c049254dca424d4d69a0082360d31382a56d8",
+                "children": [
+                    {
+                        "type": "blob",
+                        "hash": "2b8824b2060eb3dfd5c2ebbe0f1344971589151f",
+                        "path": "git-truck/public/favicon.ico",
+                        "name": "favicon.ico",
+                        "sizeInBytes": 4087,
+                        "blameAuthors": {}
+                    }
+                ]
+            },
+            {
+                "type": "blob",
+                "hash": "2f5f803f9bcc2474b34c374d0ddf6447c510d272",
+                "path": "git-truck/remix.config.mjs",
+                "name": "remix.config.mjs",
+                "sizeInBytes": 544,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "72e2affe311f284082ae3276399a9def62b8b546",
+                "path": "git-truck/remix.env.d.ts",
+                "name": "remix.env.d.ts",
+                "sizeInBytes": 91,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "17d8a57b6c2652d94c552fe522944ef5765c95b7",
+                "path": "git-truck/run-with-docker.sh",
+                "name": "run-with-docker.sh",
+                "sizeInBytes": 479,
+                "blameAuthors": {}
+            },
+            {
+                "type": "tree",
+                "path": "git-truck/scripts",
+                "name": "scripts",
+                "hash": "bebcd8b17f27bf17d565c61d2e3a20a68a059084",
+                "children": [
+                    {
+                        "type": "blob",
+                        "hash": "867925a73ca7b5d2dea06baa1a030e210c1bdb00",
+                        "path": "git-truck/scripts/benchmark.mjs",
+                        "name": "benchmark.mjs",
+                        "sizeInBytes": 2581,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "fd9ec46b87a58f43aec72ba769f3fbc2695d0c7f",
+                        "path": "git-truck/scripts/publish-experimental.js",
+                        "name": "publish-experimental.js",
+                        "sizeInBytes": 1397,
+                        "blameAuthors": {}
+                    }
+                ]
+            },
+            {
+                "type": "tree",
+                "path": "git-truck/src",
+                "name": "src",
+                "hash": "a7a9f020f026507e0442a514fee783298fce8d4f",
+                "children": [
+                    {
+                        "type": "tree",
+                        "path": "git-truck/src/analyzer",
+                        "name": "analyzer",
+                        "hash": "39ccc062d3e496a404713d18d485bbbc98a3509a",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "f7b55e0d62e0498b155c77e34d5188de3526d9bf",
+                                "path": "git-truck/src/analyzer/analyze.server.ts",
+                                "name": "analyze.server.ts",
+                                "sizeInBytes": 10212,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "eca44f3eef070b83e604a7d4a9a26bdacb4f4af2",
+                                "path": "git-truck/src/analyzer/analyze.test.ts",
+                                "name": "analyze.test.ts",
+                                "sizeInBytes": 831,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "9826376811ecd0950dd6dc240a8dec9c81b4afc4",
+                                "path": "git-truck/src/analyzer/args.server.ts",
+                                "name": "args.server.ts",
+                                "sizeInBytes": 1340,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "d5e0bc846fd557e6cb23c97ef0e7f19ee8a6d075",
+                                "path": "git-truck/src/analyzer/coauthors.server.ts",
+                                "name": "coauthors.server.ts",
+                                "sizeInBytes": 510,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "b25bd9d4750a9947c73709f74f34b0a14c0316d8",
+                                "path": "git-truck/src/analyzer/constants.ts",
+                                "name": "constants.ts",
+                                "sizeInBytes": 451,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "0308caaade1f79b4769a029f6f57c736a725eb80",
+                                "path": "git-truck/src/analyzer/git-caller.server.ts",
+                                "name": "git-caller.server.ts",
+                                "sizeInBytes": 12968,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "e9bf1bf202d54324a8b0f7f582051313d31db31e",
+                                "path": "git-truck/src/analyzer/hydrate.server.ts",
+                                "name": "hydrate.server.ts",
+                                "sizeInBytes": 3266,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "659112479f88775e0c3a6e36cd35cd02aa822633",
+                                "path": "git-truck/src/analyzer/log.server.ts",
+                                "name": "log.server.ts",
+                                "sizeInBytes": 3119,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "f7a56d18e95d22a88f856744c3f39a77733d193f",
+                                "path": "git-truck/src/analyzer/model.ts",
+                                "name": "model.ts",
+                                "sizeInBytes": 3089,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "679597b95d1fb9cfbec96098260f4010748674ff",
+                                "path": "git-truck/src/analyzer/postprocessing.server.ts",
+                                "name": "postprocessing.server.ts",
+                                "sizeInBytes": 1996,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "589dc811b5ec9478498eeced760f988e94648dec",
+                                "path": "git-truck/src/analyzer/util.server.ts",
+                                "name": "util.server.ts",
+                                "sizeInBytes": 5742,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/src/assets",
+                        "name": "assets",
+                        "hash": "d2063a7f8f130360778abb6596135c44d0876ae1",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "0bc8e83e9b43a9b3398f814636628d87257cabca",
+                                "path": "git-truck/src/assets/anitruck.piskel",
+                                "name": "anitruck.piskel",
+                                "sizeInBytes": 1757,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "29d4f29afefc569c0a62af02d0c65493d787dfd4",
+                                "path": "git-truck/src/assets/truck.gif",
+                                "name": "truck.gif",
+                                "sizeInBytes": 106446,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "00da968bbd22f25af4fd6bf0761afde879b83bba",
+                                "path": "git-truck/src/assets/truck.piskel",
+                                "name": "truck.piskel",
+                                "sizeInBytes": 818,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "d3c2f3d9bdd6a6b4fd64d0322cbbbd320b82000a",
+                                "path": "git-truck/src/assets/truck.png",
+                                "name": "truck.png",
+                                "sizeInBytes": 2034,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "f069230e7066eaa8e49aeb032d9c3bbf0d908763",
+                        "path": "git-truck/src/authorUnionUtil.server.ts",
+                        "name": "authorUnionUtil.server.ts",
+                        "sizeInBytes": 1950,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "cc68a5de41f843a54b73b5d97a3dba3774abc2a5",
+                        "path": "git-truck/src/authorUnionUtil.test.ts",
+                        "name": "authorUnionUtil.test.ts",
+                        "sizeInBytes": 2537,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "d8e04bb21d397e3b304b88396f9484cca2830327",
+                        "path": "git-truck/src/cli.ts",
+                        "name": "cli.ts",
+                        "sizeInBytes": 3628,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/src/components",
+                        "name": "components",
+                        "hash": "2826d85289b9c31db4e7add6d330f7824d2802df",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "28162823d792a3776a35f78a5d33c07ce2c8b470",
+                                "path": "git-truck/src/components/AuthorDistFragment.tsx",
+                                "name": "AuthorDistFragment.tsx",
+                                "sizeInBytes": 1358,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "e9f8f3b3bbfe947bf6358d188d192c4e3d1a1562",
+                                "path": "git-truck/src/components/Breadcrumb.tsx",
+                                "name": "Breadcrumb.tsx",
+                                "sizeInBytes": 2022,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "7494cbb1e87cdf9d62ed2c42d98780b3465e4c21",
+                                "path": "git-truck/src/components/Chart.tsx",
+                                "name": "Chart.tsx",
+                                "sizeInBytes": 16128,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "c4ebd104600e1345332a4f28ef8adaf9c7333ed5",
+                                "path": "git-truck/src/components/ChevronButton.tsx",
+                                "name": "ChevronButton.tsx",
+                                "sizeInBytes": 519,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "f917e013ba37a1e44f049626954670d091424c52",
+                                "path": "git-truck/src/components/DetailsCard.tsx",
+                                "name": "DetailsCard.tsx",
+                                "sizeInBytes": 14203,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "1b9d9979367d64a49e9c9f8ab15acdd7145d46fc",
+                                "path": "git-truck/src/components/EnumSelect.tsx",
+                                "name": "EnumSelect.tsx",
+                                "sizeInBytes": 1077,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "7c2f33696bb919599cad66be264f182d8fc87b7b",
+                                "path": "git-truck/src/components/FeedbackCard.tsx",
+                                "name": "FeedbackCard.tsx",
+                                "sizeInBytes": 997,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "7cdaa5782f6c35efa14e9d4485b020056dffb8c5",
+                                "path": "git-truck/src/components/FileHistoryElement.tsx",
+                                "name": "FileHistoryElement.tsx",
+                                "sizeInBytes": 3611,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "49107c326cf3ace49818c8c18eccb68e74147fbb",
+                                "path": "git-truck/src/components/GlobalInfo.tsx",
+                                "name": "GlobalInfo.tsx",
+                                "sizeInBytes": 4137,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "a3b0d6617839b2149c8ee47dd47a14c5deb75d0d",
+                                "path": "git-truck/src/components/HiddenFiles.tsx",
+                                "name": "HiddenFiles.tsx",
+                                "sizeInBytes": 2102,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "463a59db1e6dc2ff73dedfbc4a9309da8199aa49",
+                                "path": "git-truck/src/components/LoadingIndicator.tsx",
+                                "name": "LoadingIndicator.tsx",
+                                "sizeInBytes": 678,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "75051a1eba8dd065940a609d9ff881a62c6f0196",
+                                "path": "git-truck/src/components/Options.tsx",
+                                "name": "Options.tsx",
+                                "sizeInBytes": 7833,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "0f2235477fda8540ebf400ce990b9f4242ac407c",
+                                "path": "git-truck/src/components/Providers.tsx",
+                                "name": "Providers.tsx",
+                                "sizeInBytes": 4911,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "feee0e1a158c50ddd09531a778a95a280cedf7c7",
+                                "path": "git-truck/src/components/RevisionSelect.tsx",
+                                "name": "RevisionSelect.tsx",
+                                "sizeInBytes": 1503,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "215bde06f02af83c6b157293040d1fafa049f030",
+                                "path": "git-truck/src/components/SearchCard.tsx",
+                                "name": "SearchCard.tsx",
+                                "sizeInBytes": 4588,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "f82e6acfae00999107db139eb0ee80ac3c8c03b5",
+                                "path": "git-truck/src/components/Tooltip.tsx",
+                                "name": "Tooltip.tsx",
+                                "sizeInBytes": 4243,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "048c1ab18f4acf216bedbce57e1b41057b7aab3d",
+                                "path": "git-truck/src/components/UnionAuthorsModal.tsx",
+                                "name": "UnionAuthorsModal.tsx",
+                                "sizeInBytes": 8364,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "tree",
+                                "path": "git-truck/src/components/legend",
+                                "name": "legend",
+                                "hash": "13f77e4510d724a5ed4bf6f904f643bb5d0a2940",
+                                "children": [
+                                    {
+                                        "type": "blob",
+                                        "hash": "e40812891b3077a4ebe888dbb0137c04e70cf10a",
+                                        "path": "git-truck/src/components/legend/GradiantLegend.tsx",
+                                        "name": "GradiantLegend.tsx",
+                                        "sizeInBytes": 1721,
+                                        "blameAuthors": {}
+                                    },
+                                    {
+                                        "type": "blob",
+                                        "hash": "cf0522bf06d771325d16b101f266348a007fc3cf",
+                                        "path": "git-truck/src/components/legend/Legend.tsx",
+                                        "name": "Legend.tsx",
+                                        "sizeInBytes": 2253,
+                                        "blameAuthors": {}
+                                    },
+                                    {
+                                        "type": "blob",
+                                        "hash": "21464f826020dd68c97866a6b4eee83fc5980c70",
+                                        "path": "git-truck/src/components/legend/PointLegend.tsx",
+                                        "name": "PointLegend.tsx",
+                                        "sizeInBytes": 2699,
+                                        "blameAuthors": {}
+                                    },
+                                    {
+                                        "type": "blob",
+                                        "hash": "ce943cd45a904a077edef7da98d96d8c84ef4124",
+                                        "path": "git-truck/src/components/legend/SegmentLegend.tsx",
+                                        "name": "SegmentLegend.tsx",
+                                        "sizeInBytes": 3308,
+                                        "blameAuthors": {}
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "1b43d92976a55d23014a18ae21c7bcccb4a24ad9",
+                                "path": "git-truck/src/components/util.tsx",
+                                "name": "util.tsx",
+                                "sizeInBytes": 2386,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "fea9fcd6e9e68ffa2b17df8949369fa70a4374c6",
+                        "path": "git-truck/src/const.ts",
+                        "name": "const.ts",
+                        "sizeInBytes": 479,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/src/contexts",
+                        "name": "contexts",
+                        "hash": "a6f69d6426cd2749fb1483d545163ef9e8386afd",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "04f3105545a8b299e1146010b1f1f3e4c5a87804",
+                                "path": "git-truck/src/contexts/ClickedContext.ts",
+                                "name": "ClickedContext.ts",
+                                "sizeInBytes": 605,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "61d2e9a4552ab39bf50543d27e6ff73c67478b68",
+                                "path": "git-truck/src/contexts/DataContext.ts",
+                                "name": "DataContext.ts",
+                                "sizeInBytes": 351,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "56ff004cbb944ca4d7fcf3690e263b2a8dd220a5",
+                                "path": "git-truck/src/contexts/MetricContext.ts",
+                                "name": "MetricContext.ts",
+                                "sizeInBytes": 374,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "7e050923e29dfe95f823d9af3310766810ab2b87",
+                                "path": "git-truck/src/contexts/OptionsContext.ts",
+                                "name": "OptionsContext.ts",
+                                "sizeInBytes": 3001,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "8e90af72a8506f1c1995b1715a2883c12c4aa438",
+                                "path": "git-truck/src/contexts/PathContext.ts",
+                                "name": "PathContext.ts",
+                                "sizeInBytes": 442,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "00630e2e32352f1873ebb23982eaa6cd0028beed",
+                                "path": "git-truck/src/contexts/SearchContext.ts",
+                                "name": "SearchContext.ts",
+                                "sizeInBytes": 604,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "155c53ae32d6fe97a941452dc90a46ee2426582a",
+                        "path": "git-truck/src/entry.client.tsx",
+                        "name": "entry.client.tsx",
+                        "sizeInBytes": 515,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "e43739b801e09e38c1d2af1f3f02a343405a48b1",
+                        "path": "git-truck/src/entry.server.tsx",
+                        "name": "entry.server.tsx",
+                        "sizeInBytes": 1199,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "2ee3b905a007aa5f4d6b99120fa9d33ad5797850",
+                        "path": "git-truck/src/hooks.ts",
+                        "name": "hooks.ts",
+                        "sizeInBytes": 1198,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "c8df9086ccfb2346d9aa37de33cc349fbd3ecef7",
+                        "path": "git-truck/src/lang-map.d.ts",
+                        "name": "lang-map.d.ts",
+                        "sizeInBytes": 87,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/src/metrics",
+                        "name": "metrics",
+                        "hash": "48115259697053cecdb32e8816b919700ba72706",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "26ace4929ae3ed7ad7752b2ef4c587a8a90094bc",
+                                "path": "git-truck/src/metrics/chartDepth.ts",
+                                "name": "chartDepth.ts",
+                                "sizeInBytes": 485,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "0e270b8de5761c511e396d76100a4eab9ad3c9eb",
+                                "path": "git-truck/src/metrics/fileExtension.ts",
+                                "name": "fileExtension.ts",
+                                "sizeInBytes": 886,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "1a0649ba58a19233c1402dab1d9e99a95dd2c7ac",
+                                "path": "git-truck/src/metrics/lastChanged.ts",
+                                "name": "lastChanged.ts",
+                                "sizeInBytes": 923,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "48ec078c76766fc941f536d2649a9e725c1617d2",
+                                "path": "git-truck/src/metrics/metricUtils.ts",
+                                "name": "metricUtils.ts",
+                                "sizeInBytes": 1542,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "f584af6163a253a9e9ca53121a444aac6d447d0b",
+                                "path": "git-truck/src/metrics/metrics.ts",
+                                "name": "metrics.ts",
+                                "sizeInBytes": 8431,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "4c862f226f85b18c69f0318bd0006eb293bab285",
+                                "path": "git-truck/src/metrics/mostCommits.ts",
+                                "name": "mostCommits.ts",
+                                "sizeInBytes": 781,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "9b0632d3aa9afa5dd05530fbad9e1ab63010ba24",
+                                "path": "git-truck/src/metrics/singleAuthor.ts",
+                                "name": "singleAuthor.ts",
+                                "sizeInBytes": 1246,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "ed881beb4f37027ec73a348be0a464c86791ff71",
+                                "path": "git-truck/src/metrics/sizeMetric.ts",
+                                "name": "sizeMetric.ts",
+                                "sizeInBytes": 224,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "588e2d625e5d1df0eee59d5399358ef374ec5ef7",
+                                "path": "git-truck/src/metrics/topContributer.ts",
+                                "name": "topContributer.ts",
+                                "sizeInBytes": 1207,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "a67230d94e1d3017b3f6d3b915c47bfc1305f5ab",
+                                "path": "git-truck/src/metrics/truckFactor.ts",
+                                "name": "truckFactor.ts",
+                                "sizeInBytes": 912,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "03afb0bff9787612490e1523dcc9d769ddc7528d",
+                        "path": "git-truck/src/root.tsx",
+                        "name": "root.tsx",
+                        "sizeInBytes": 2346,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/src/routes",
+                        "name": "routes",
+                        "hash": "824e21f13c4ae3cdcf9d57a5ce3985fd74ecae18",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "d4b12493e5421c92d06aeaf3a1744ae5bce75f69",
+                                "path": "git-truck/src/routes/$repo.$.tsx",
+                                "name": "$repo.$.tsx",
+                                "sizeInBytes": 11678,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "e0a299eadfef9eac3ac9c9c33acf71d17ce5750c",
+                                "path": "git-truck/src/routes/_index.tsx",
+                                "name": "_index.tsx",
+                                "sizeInBytes": 5201,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "tree",
+                        "path": "git-truck/src/styles",
+                        "name": "styles",
+                        "hash": "69685610b6cac182a8f6d372c5c5f55a2ec08886",
+                        "children": [
+                            {
+                                "type": "blob",
+                                "hash": "c96ccac7f080b9aab89eccd1e76e28a19f351702",
+                                "path": "git-truck/src/styles/index.css",
+                                "name": "index.css",
+                                "sizeInBytes": 1139,
+                                "blameAuthors": {}
+                            },
+                            {
+                                "type": "blob",
+                                "hash": "e10781490b278dabe3cfdeb87258dab51d3a9783",
+                                "path": "git-truck/src/styles/vars.css",
+                                "name": "vars.css",
+                                "sizeInBytes": 847,
+                                "blameAuthors": {}
+                            }
+                        ]
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "6fdc11ab1bb7799cab6ca5899daf3bcb6d37f04d",
+                        "path": "git-truck/src/tailwind.css",
+                        "name": "tailwind.css",
+                        "sizeInBytes": 4009,
+                        "blameAuthors": {}
+                    },
+                    {
+                        "type": "blob",
+                        "hash": "ce41cfad2057625ed2a5b9a9e1b6508f8454eaad",
+                        "path": "git-truck/src/util.ts",
+                        "name": "util.ts",
+                        "sizeInBytes": 4463,
+                        "blameAuthors": {}
+                    }
+                ]
+            },
+            {
+                "type": "blob",
+                "hash": "80f12d563ca180476d99e55bdfc04669ab98b53a",
+                "path": "git-truck/tailwind.config.js",
+                "name": "tailwind.config.js",
+                "sizeInBytes": 484,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "d94b4dd8a14709264d40feed85f266d75b05fce5",
+                "path": "git-truck/truckconfig.json",
+                "name": "truckconfig.json",
+                "sizeInBytes": 232,
+                "blameAuthors": {}
+            },
+            {
+                "type": "blob",
+                "hash": "cd39e51e487e8c8e4e9c517954b74fd4d6e21da4",
+                "path": "git-truck/tsconfig.json",
+                "name": "tsconfig.json",
+                "sizeInBytes": 533,
+                "blameAuthors": {}
+            }
+        ]
+    }
+}
