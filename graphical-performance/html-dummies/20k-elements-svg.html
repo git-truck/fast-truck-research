@@ -1,0 +1,54 @@
+<svg id="svg" width="1300" height="900"></svg>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+    var num = 20000;
+    var minDiameter = 1;
+    var maxDiameter = 5;
+
+    var svg = d3.select("#svg");
+
+    var particles = d3.range(num).map(function (i) {
+        return {
+            cx: Math.round(1300 * Math.random()),
+            cy: Math.round(900 * Math.random()),
+            r: minDiameter + Math.random() * (maxDiameter - minDiameter),
+        };
+    });
+
+    var circles = svg.selectAll("circle")
+        .data(particles)
+        .enter()
+        .append("circle")
+        .attr("cx", function (d) { return d.cx; })
+        .attr("cy", function (d) { return d.cy; })
+        .attr("r", function (d) { return d.r; })
+        .attr("fill", "rgba(0,0,0,1)");
+
+    d3.timer(step);
+
+    let lastFrame = new Date().getTime();
+    function step() {
+        let now = new Date().getTime();
+        console.log(1000 / (now - lastFrame) + " fps");
+        lastFrame = now;
+
+        particles.forEach(function (p) {
+            p.cx += Math.round(2 * Math.random() - 1);
+            p.cy += Math.round(2 * Math.random() - 1);
+            if (p.cx < 0) p.cx = 1300;
+            if (p.cx > 1300) p.cx = 0;
+            if (p.cy < 0) p.cy = 900;
+            if (p.cy > 900) p.cy = 0;
+        });
+
+        circles.attr("cx", function (d) { return d.cx; })
+            .attr("cy", function (d) { return d.cy; });
+    };
+</script>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+</style>

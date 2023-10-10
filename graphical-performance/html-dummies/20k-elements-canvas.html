@@ -1,0 +1,55 @@
+<canvas id="canvas"></canvas>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+    var num = 20000;
+    var minDiameter = 1;
+    var maxDiameter = 5;
+
+    var canvas = document.getElementById("canvas");
+    var width = canvas.width = 1300;
+    var height = canvas.height = 900;
+    var ctx = canvas.getContext("2d");
+
+    var particles = d3.range(num).map(function (i) {
+        return [
+            Math.round(width * Math.random()),
+            Math.round(height * Math.random()),
+            minDiameter + Math.random() * (maxDiameter - minDiameter)
+        ];
+    });
+
+    d3.timer(step);
+
+    let lastFrame = new Date().getTime()
+    function step() {
+        
+        let now = new Date().getTime()
+        console.log(1000/(now-lastFrame) + " fps")
+        lastFrame = now
+        ctx.fillStyle = "rgba(255,255,255,0.3)";
+        ctx.fillRect(0, 0, width, height);
+        ctx.fillStyle = "rgba(0,0,0,1)";
+        particles.forEach(function (p) {
+            p[0] += Math.round(2 * Math.random() - 1);
+            p[1] += Math.round(2 * Math.random() - 1);
+            if (p[0] < 0) p[0] = width;
+            if (p[0] > width) p[0] = 0;
+            if (p[1] < 0) p[1] = height;
+            if (p[1] > height) p[1] = 0;
+            drawCircle(p);
+        });
+    };
+
+    function drawCircle(p) {
+        ctx.beginPath();
+        ctx.arc(p[0], p[1], p[2], 0, 2 * Math.PI);
+        ctx.fill();
+    };
+</script>
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+</style>
